@@ -19,7 +19,7 @@ import org.apache.commons.io.FileUtils;
 import org.junit.Test;
 
 import com.epam.rd.autocode.dao.DaoFactory;
-import com.epam.rd.autocode.dao.DepartmentDao;
+import com.epam.rd.autocode.dao.interfaces.DepartmentDao;
 import com.epam.rd.autocode.domain.Department;
 
 public class DepartmentDaoTests {

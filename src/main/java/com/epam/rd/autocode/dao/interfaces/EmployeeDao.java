@@ -1,4 +1,4 @@
-package com.epam.rd.autocode.dao;
+package com.epam.rd.autocode.dao.interfaces;
 
 import java.math.BigInteger;
 import java.util.List;

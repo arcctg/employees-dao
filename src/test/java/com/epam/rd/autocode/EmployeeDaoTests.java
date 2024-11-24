@@ -17,7 +17,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import com.epam.rd.autocode.dao.EmployeeDao;
+import com.epam.rd.autocode.dao.interfaces.EmployeeDao;
 import org.apache.commons.io.FileUtils;
 import org.junit.Test;
 
