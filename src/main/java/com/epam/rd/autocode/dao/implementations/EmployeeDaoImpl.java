@@ -1,6 +1,6 @@
 package com.epam.rd.autocode.dao.implementations;
 
-import com.epam.rd.autocode.ConnectionSource;
+import com.epam.rd.autocode.connection.ConnectionSource;
 import com.epam.rd.autocode.dao.interfaces.EmployeeDao;
 import com.epam.rd.autocode.dao.interfaces.StatementSetter;
 import com.epam.rd.autocode.domain.Department;
@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-public class EmployeeDaoIml implements EmployeeDao {
+public class EmployeeDaoImpl implements EmployeeDao {
     private static final ConnectionSource CONNECTION_SOURCE = ConnectionSource.instance();
 
     private static final String GET_ONE = "SELECT * FROM EMPLOYEE WHERE ID = ?";

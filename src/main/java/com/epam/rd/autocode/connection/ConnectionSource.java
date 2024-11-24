@@ -1,4 +1,4 @@
-package com.epam.rd.autocode;
+package com.epam.rd.autocode.connection;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -36,10 +36,10 @@ public class ConnectionSource {
 
             try (Connection conn = DriverManager.getConnection(DB_URL, USER, PASS)) {
                 try (Statement statement = conn.createStatement()) {
-                    statement.execute(getSql("init-ddl.sql"));
+                    statement.execute(getSql("db/init-ddl.sql"));
                 }
                 try (Statement statement = conn.createStatement()) {
-                    statement.execute(getSql("init-dml.sql"));
+                    statement.execute(getSql("db/init-dml.sql"));
                 }
             }
         } catch (SQLException e) {
