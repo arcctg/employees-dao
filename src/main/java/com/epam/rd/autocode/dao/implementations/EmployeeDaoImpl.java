@@ -46,8 +46,6 @@ public class EmployeeDaoImpl implements EmployeeDao {
 
     @Override
     public Employee save(Employee employee) {
-        Employee empl;
-
         try (Connection connection = CONNECTION_SOURCE.createConnection();
              PreparedStatement statement = connection.prepareStatement(INSERT)) {
             if (getById(employee.getId()).isPresent()) {

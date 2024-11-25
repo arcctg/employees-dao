@@ -6,11 +6,11 @@ import com.epam.rd.autocode.dao.interfaces.DepartmentDao;
 import com.epam.rd.autocode.dao.interfaces.EmployeeDao;
 
 public class DaoFactory {
-    public EmployeeDao employeeDAO() {
+    public static EmployeeDao createEmployeeDao() {
         return new EmployeeDaoImpl();
     }
 
-    public DepartmentDao departmentDAO() {
+    public static DepartmentDao createDepartmentDao() {
         return new DepartmentDaoImpl();
     }
 }
