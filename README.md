@@ -1,7 +1,7 @@
 # Employees. DAO.
 
 ## Description 
-Implement [`com.epam.rd.autocode.dao.factory.DaoFactory`](src/main/java/com/epam/rd/autocode/dao/DaoFactory.java) methods.
+Implement [`com.epam.rd.autocode.dao.factory.DaoFactory`](src/main/java/com/epam/rd/autocode/dao/factory/DaoFactory.java) methods.
 
 It should return Employee and Department DAO instances.
 
